@@ -1,0 +1,10 @@
+^D:\FLUTTER\FLUTTER\FLUTTER\BUILD\WINDOWS\X64\CMAKEFILES\6DED62F92D26DF90B5F718FF9B69689E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/flutter/flutter/flutter/windows -BD:/flutter/flutter/flutter/build/windows/x64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/flutter/flutter/flutter/build/windows/x64/hacker_amiibos.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
